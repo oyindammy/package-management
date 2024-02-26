@@ -48,7 +48,12 @@ sudo unzip sonarqube-7.8.zip
 sudo rm -rf sonarqube-7.8.zip
 sudo mv sonarqube-7.8 sonarqube
 ```
-
+cd /opt/
+   sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.1.0.47736.zip
+   unzip sonarqube-9.1.0.47736.zip
+   mv sonarqube-9.1.0.47736 sonarqube
+   sudo chown -R sonar:sonar /opt/sonarqube
+---
 ## 5. Grant file permissions for sonar user to start and manage sonarQube
 ```sh
 sudo chown -R sonar:sonar /opt/sonarqube/
